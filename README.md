@@ -1,4 +1,5 @@
 <a id="ai-iac-security-reviewer"></a>
+
 <a href="#quick-start">
 <picture>
   <source media="(max-width: 600px)" srcset="docs/assets/readme/header-mobile.png">
