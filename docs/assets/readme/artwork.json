@@ -1,0 +1,77 @@
+{
+  "title": "AI IaC Security Reviewer",
+  "titleFontSize": 80,
+  "mobileTitle": [
+    "AI IaC security",
+    "reviewer"
+  ],
+  "eyebrow": "SECURITY AUTOMATION",
+  "tagline": "Review infrastructure before deployment.",
+  "mobileTagline": [
+    "Review infrastructure",
+    "before deployment."
+  ],
+  "description": [
+    "A Python CLI for Terraform, Bicep and CloudFormation.",
+    "Local or hosted model providers with structured reports."
+  ],
+  "mobileDescription": [
+    "Review infrastructure with a Python CLI.",
+    "Local or hosted models. Structured reports."
+  ],
+  "footerLeft": "PYTHON",
+  "footerMiddle": "LOCAL / OPENAI / ANTHROPIC",
+  "footerRight": "IAC / FINDINGS / REPORTS",
+  "diagram": [
+    "CODE",
+    "REVIEW",
+    "REPORT"
+  ],
+  "summary": "A Python tool for reviewing infrastructure code with local or hosted language models and producing human-readable or JSON findings.",
+  "cards": [
+    {
+      "slug": "start",
+      "category": "GET STARTED",
+      "title": "Run a sample review",
+      "lines": [
+        "Review the CLI setup and run",
+        "against a bundled sample file."
+      ],
+      "footer": "CLI / QUICK START",
+      "href": "#quick-start"
+    },
+    {
+      "slug": "providers",
+      "category": "MODEL CONFIGURATION",
+      "title": "Choose a provider",
+      "lines": [
+        "Configure local, OpenAI or",
+        "Anthropic provider options."
+      ],
+      "footer": "PROVIDERS / CONFIGURATION",
+      "href": "#llm-providers"
+    },
+    {
+      "slug": "source",
+      "category": "IMPLEMENTATION",
+      "title": "Inspect the reviewer",
+      "lines": [
+        "Read the CLI entry point and",
+        "the provider and report modules."
+      ],
+      "footer": "PYTHON / SOURCE CODE",
+      "href": "reviewer.py"
+    },
+    {
+      "slug": "samples",
+      "category": "REVIEW INPUTS",
+      "title": "Explore sample inputs",
+      "lines": [
+        "Compare bundled infrastructure",
+        "examples before using your own."
+      ],
+      "footer": "TERRAFORM / SAMPLE FIXTURES",
+      "href": "samples/insecure.tf"
+    }
+  ]
+}

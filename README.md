@@ -1,10 +1,52 @@
-![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)
-![Terraform](https://img.shields.io/badge/Terraform-IaC-purple?logo=terraform)
-![CI/CD Ready](https://img.shields.io/badge/CI%2FCD-Gate_Ready-brightgreen)
-![Multi-LLM](https://img.shields.io/badge/LLM-Local_%7C_OpenAI_%7C_Anthropic-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
+<a id="ai-iac-security-reviewer"></a>
+<a href="#quick-start">
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/assets/readme/header-mobile.png">
+  <img src="docs/assets/readme/header.png" width="1440" alt="AI IaC Security Reviewer. A Python tool for reviewing infrastructure code with local or hosted language models and producing human-readable or JSON findings.">
+</picture>
+</a>
 
-# AI IaC Security Reviewer
+<p>
+  <a href="#quick-start"><strong>Start here ↗</strong></a> &nbsp; / &nbsp;
+  <a href="reviewer.py">Source</a> &nbsp; / &nbsp;
+  <a href="#project-guide">Project guide</a> &nbsp; / &nbsp;
+  <a href="https://github.com/jmragsdale">Profile</a>
+</p>
+
+A Python tool for reviewing infrastructure code with local or hosted language models and producing human-readable or JSON findings.
+
+## Explore the project
+
+Open a card for the implementation, examples or supporting documentation.
+
+<p>
+<a href="#quick-start">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/start-dark.png">
+  <img src="docs/assets/readme/start-light.png" width="360" alt="Run a sample review. Review the CLI setup and run against a bundled sample file.">
+</picture>
+</a>
+<a href="#llm-providers">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/providers-dark.png">
+  <img src="docs/assets/readme/providers-light.png" width="360" alt="Choose a provider. Configure local, OpenAI or Anthropic provider options.">
+</picture>
+</a>
+<a href="reviewer.py">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/source-dark.png">
+  <img src="docs/assets/readme/source-light.png" width="360" alt="Inspect the reviewer. Read the CLI entry point and the provider and report modules.">
+</picture>
+</a>
+<a href="samples/insecure.tf">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/samples-dark.png">
+  <img src="docs/assets/readme/samples-light.png" width="360" alt="Explore sample inputs. Compare bundled infrastructure examples before using your own.">
+</picture>
+</a>
+</p>
+
+## Project guide
 
 AI-powered security review for **Terraform, Bicep, and CloudFormation** that catches misconfigurations before they reach the cloud. Integrates directly into CI/CD pipelines and blocks deployments with critical or high findings.
 
@@ -166,6 +208,9 @@ teams where infrastructure code cannot be sent to external APIs.
 
 ## Architecture
 
+<details>
+<summary>Architecture flow (text)</summary>
+
 ```
 reviewer.py  (CLI)
     │
@@ -179,6 +224,8 @@ reviewer.py  (CLI)
     └── src/report.py       ← Parse JSON, render human output, exit codes
 ```
 
+</details>
+
 ## Related Projects
 
 - [local-llm-security-copilot](https://github.com/jmragsdale/local-llm-security-copilot) — Local LLM for log analysis, CVE explanation, config review
@@ -188,3 +235,21 @@ reviewer.py  (CLI)
 
 **Jermaine Ragsdale** · CISSP · AWS Solutions Architect  
 [jmragsdale.com](https://jmragsdale.com) · [LinkedIn](https://linkedin.com/in/jermaine-ragsdale-cissp) · [GitHub](https://github.com/jmragsdale)
+
+<details>
+<summary>Project metadata</summary>
+
+![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-purple?logo=terraform)
+![CI/CD Ready](https://img.shields.io/badge/CI%2FCD-Gate_Ready-brightgreen)
+![Multi-LLM](https://img.shields.io/badge/LLM-Local_%7C_OpenAI_%7C_Anthropic-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+</details>
+
+<details>
+<summary>README visual assets</summary>
+
+[Artwork sources and regeneration notes](docs/assets/readme/README.md).
+
+</details>
